@@ -6,12 +6,7 @@ import (
 )
 
 func ParseCommands() {
-	x := pflag.Args()
-	y := pflag.NArg()
-	z := pflag.NFlag()
 	pflag.Parse()
+	spew.Dump(pflag.Args())
 
-	spew.Dump(x)
-	spew.Dump(y)
-	spew.Dump(z)
 }
